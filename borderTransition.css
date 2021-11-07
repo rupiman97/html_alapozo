@@ -1,0 +1,8 @@
+.borderTransition{
+    transition: border 2s ease;
+    border: 5px solid transparent;
+}
+
+.borderTransition:hover{
+    border: 5px solid black;
+}

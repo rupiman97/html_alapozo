@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="font-awesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flipcard.css">
+    <link rel="stylesheet" href="borderAnimation.css">
+    <link rel="stylesheet" href="textBackground.css">
+    <link rel="stylesheet" href="borderTransition.css">
+    <link rel="stylesheet" href="movingBackground.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand">Rupee3D</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Kezdőoldal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Bemutatkozás</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Elérhetőség</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <span style="padding-right: 5px;">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <span style="padding-right: 30px;">
+                        hopeszur@gmail.com
+                    </span>
+                    <span style="padding-right: 3px;">
+                        <i class="fas fa-phone"></i>
+                    </span>
+                    <span style="padding-right: 30px;">
+                        +36 30 183 2697
+                    </span>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section class="section1 movingBackground">
+        <div class="container">
+            <div class="row center">
+                <div class="col-sm center">
+                    <h1 style="color: azure;">Kezdőoldal</h1>
+                </div>
+            </div>
+            <div class="row center">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <div class="row align-items-center">
+                        <div class="col-6 padding-0 borderAnimation" id="zoomdiv">
+                            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                <div class="carousel-inner carousselSize">
+                                    <div class="carousel-item active">
+                                        <img src="img/carousel_1.png" class="d-block" style="width: 100%; height: 100%; object-fit: cover;">
+                                    </div>
+                                    <div class="carousel-item carousselSize" style="object-fit: contain;">
+                                        <img src="img/carousel2.jpg" class="d-block w-100" style="width: 100%; height: 100%; object-fit: cover;">
+                                    </div>
+                                    <div class="carousel-item carousselSize">
+                                        <img src="img/3d_printed_part2.jpg" class="d-block w-100" style="width: 100%; height: 100%; object-fit: cover;">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev " type="button" 
+                                    data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"  aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-6 padding-0 textBackground">
+                            <p>
+                                Sok embernek a 3D nyomtatás során előszőr kis figurák, játékok nyomtatása ugrik be.
+                                Azonban a 3D nyomtatás egy igencsak felfele ívelő technológia az iparban. Míg pár éve
+                                ezek a készülékek főleg az egyetemeken, illetve nagyobb vállalatoknál voltak
+                                megtalálhatóak, már mindenki találhat magának olcsón az interneten. Habár nagyobb
+                                sorozatszámoknál ez a technológia kifejezetten hasztalan, az egyedi alkatrészek, és
+                                prototípusgyártás esetében óriási a kereslete. Nem beszélve arról, ha kisebb
+                                sorozatszámról lenne szó, melyben minden alkatrész egy kicsit eltér a többitől. Könnyen
+                                elképzelhető, hogy a 3D nyomtatás a közeljövőben berobban, és alapjaiban változtatja meg
+                                az ipari megoldásokat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section3">
+        <div class="container">
+            <div class="row center">
+                <div class="col-sm center">
+                    <h1 style="color: azure;">Bemutatkozás</h1>
+                </div>
+            </div>
+            <div class="row center" id="row1">
+                <div class="col-1"></div>
+                <div class="col-10 ">
+                    <div class="row align-items-center">
+                        <div class="col-6 padding-0 textBackground">
+                            <p>
+                                Rupert Balázs vagyok, a Rupee3D megalkotója. Középiskolás korom óta folyamatosan
+                                foglalkoztatnak a különféle technológiák, megmunkálási módok. Első otthoni 3D nyomtatóm
+                                4 évvel ezelőtt került hozzám. Különböző alkatrészeket nyomtattam egyből vele, főleg
+                                arduinohoz. Azóta 3D nyomtatóval saját lézergravírozó gépemet is megépítettem. Úgy
+                                gondolom, hogy a 3D nyomtatásnak óriási jövője lehet főleg az egyedi alkatrészekben,
+                                illetve a protitípus gyártásban ma is gyakran alkalmazott módszer. Nem elfelejtendő
+                                környezetbarátabb mivoltja, hiszen a legtöbb nyomtatott alkatrész nem tömör, hanem
+                                üreges,
+                                ezzel is csökkentve a felhasznált anyag mennyiségét.
+                            </p>
+                        </div>
+                        <div class="col-6 borderTransition padding-0" id="zoomdiv">
+                            <img src="/img/self_portrait.jpg" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section4">
+        <div class="container">
+            <div class="row center">
+                <div class="col-sm center">
+                    <h1 style="color: azure;">Nyomtatók</h1>
+                </div>
+            </div>
+            <div class="row center">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <div class="row align-items-center">
+                        <div class="col-6 padding-0">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="/img/i3mega.jpg" alt="Avatar" style="width:300px;height:300px;">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h1>Anycubic i3 mega</h1>
+                                        <p>Gyors, FDM technológián alapuló nyomtató.</p>
+                                        <table style="width: 90%;">
+                                            <tr>
+                                                <th>Modellező tér:</th>
+                                                <th class="tableValue">
+                                                    210mm x 210mm x 205mm
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    Nyomtatási sebesség:
+                                                </th>
+                                                <th class="tableValue">
+                                                    100 mm/s
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    Rétegvastagság:
+                                                </th>
+                                                <th class="tableValue">
+                                                    0,05mm - 0,3mm
+                                                </th>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 padding-0">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section5">
+        <div class="container">
+            <div class="row center">
+                <div class="col-sm center">
+                    <h1 style="color: azure;">Elérhetőség</h1>
+                </div>
+            </div>
+            <div class="row center">
+                <div class="col-2">
+
+                </div>
+                <div class="col-8">
+                    <div class="row center">
+                        <p>Amennyiben felkeltettem érdeklődését, vagy érdekelné próbanyomtatás, keressen az alábbi elérhetőségeken:</p>
+                    </div>
+                    <div class="row center">
+                        
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section2">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="row">
+                    <p class="quote">"A technológiai fejlődésnek azt kell szolgálnia, hogy ne legyenek vesztesei,
+                        mindenkinek jobb legyen"</p>
+                </div>
+                <div class="row">
+                    Martin Fort
+                </div>
+            </div>
+            <div class="col-2"></div>
+
+        </div>
+    </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</html>
